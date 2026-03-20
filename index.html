@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 💖 INTRO PAGE -->
+<div id="intro">
+    <h1 class="intro-text">
+        ❤️ A small letter from your bubu, just for you ❤️
+    </h1>
+    <button class="start-btn" onclick="startStory()">Open 💌</button>
+</div>
+
+<!-- 📸 SLIDES -->
+<div class="container" style="display:none;">
+
+    <div class="image-box">
+        <img id="img1">
+        <img id="img2">
+    </div>
+
+    <p id="text"></p>
+
+    <div class="buttons">
+        <button onclick="prevSlide()">⬅️</button>
+        <button onclick="nextSlide()">➡️</button>
+    </div>
+
+</div>
+
+<!-- ❤️ FINAL PAGE -->
+<div id="finalSlide" style="display:none;">
+    <div class="heart-container">
+        <div class="heart"></div>
+
+        <img src="images/panda1.png" class="panda left">
+        <img src="images/panda2.png" class="panda right">
+    </div>
+
+    <h2 class="love-text">I love you gunu ❤️</h2>
+</div>
+
+<!-- 🎵 MUSIC -->
+<audio id="music" src="song.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
